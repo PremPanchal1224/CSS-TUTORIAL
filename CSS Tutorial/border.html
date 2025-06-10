@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image Example</title>
+    <style>
+        .bordered-box {
+            width: 300px;
+            height: 200px;
+            border: 10px solid transparent; /* Initial border to define the width */
+            border-image-source: url('https://th.bing.com/th/id/OIP.tLotgCDtzgTdwJcTiXWRCwHaEK?rs=1&pid=ImgDetMain'); /* Image source */
+            border-image-slice: 30; /* Defines the slicing of the image */
+            border-image-width: 10px; /* Width of the border */
+            border-image-outset: 0; /* Offset the border image */
+            border-image-repeat: stretch; /* How the image is repeated */
+        }
+    </style>
+</head>
+<body>
+    <div class="bordered-box">
+        This box has an image border.
+    </div>
+</body>
+</html>

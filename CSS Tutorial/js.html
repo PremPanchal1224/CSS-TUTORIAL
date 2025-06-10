@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Background Color Changer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Watch the Background Color Change!</h1>
+
+    <script>
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function changeBackgroundColor() {
+            var newColor = getRandomColor();
+            document.body.style.backgroundColor = newColor;
+        }
+
+        // Set interval to change background color every 5 seconds (5000 milliseconds)
+        setInterval(changeBackgroundColor, 5000);
+    </script>
+</body>
+</html>

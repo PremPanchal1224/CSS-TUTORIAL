@@ -1,0 +1,13 @@
+header{
+    background-color: grey;
+    padding: 5px 5px;
+    text-align: center;
+    width: 800px;
+    margin: 20px auto;
+}
+article{
+    border: 1px solid black;
+    padding: 15px 10px;
+    width:800px;
+    margin: 20px auto;
+}
